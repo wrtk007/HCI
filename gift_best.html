@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,47 @@
     <title>Best</title>
 </head>
 <body>
+    <div class="container">
+
+        <div class="item header logo">
+            <a class="home-link" href="../home.html"><img src="../logo.png" alt="logo" style="max-width:100%;"/></a>
+        </div>
+
+        <div class="item header nav">
+            <div class="navbtn"><a class="nav-link" id="nav_letter" href="../letter.html">LETTER</a></div>
+            <div class="active"><a class="nav-link" id="nav_gift" href="../gift_send.html">GIFT</a></div>
+            <div class="navbtn"><a class="nav-link" id="nav_manito" href="../Manito.html">MANITO</a></div>
+        </div>
+
+        <div class="item header info">
+            Welcome <span id="userID"></span>
+            <i class="fas fa-sign-out-alt" id="logoutbtn" style="font-size: 40px; margin-left: 10px;"></i>
+        </div>
+
+
+        <div class="item sidebar">
+             <div class="func">
+                <button class="sidebarbtn on" onClick="location.href='gift_send.html'"><i class="fas fa-gift"></i>Send a gift</button>
+            </div>
+            <div class="func">
+                <button class="sidebarbtn" onClick="location.href='gift_check.html'"><i class="fas fa-box-open"></i>Receive a gift</button>
+            </div>
+        </div>
+
+        <div class="item main">
+            <div class="searcharea">
+                <input class="search" type="text" placeholder="Search the gift">
+                <button class="searchbtn"type="submit">Search</button>
+            </div>
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="location.href='gift_send.html'">Recommendation</button>
+                <button class="tablinks" id="tab_on" onclick="location.href='gift_best.html'">Best</button>
+                <button class="tablinks" onclick="location.href='gift_category.html'">Category</button>
+            </div>
+            
+            
     <div class="wrapper">
         <div class="wrapper_rank">
             Ranking
@@ -73,5 +115,11 @@
             </table>
         </div>
     </div>
+            
+
+            
+        </div>
+    </div>
+
 </body>
 </html>
