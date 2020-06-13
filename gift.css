@@ -200,6 +200,10 @@ body {
     border-bottom : solid 1px gray;
 }
 
+.ad_content {
+    cursor: pointer;
+}
+
 .ad_img img{
     height : 120px;
     width : auto;
