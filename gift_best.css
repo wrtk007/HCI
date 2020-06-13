@@ -232,6 +232,7 @@ body {
 
 .rank_tr{
     margin : 20px;
+    cursor: pointer;
 }
 
 .rank_no{
