@@ -113,22 +113,107 @@ body {
   font-size: 40px;
 }
 
-.card {
-    border: #5e5aa4 solid 2px;
-    border-radius: 3px;
-    width : 520px;
+/*gift_send 검색창*/
+.searcharea {
+    text-align: center;
+    margin-bottom: 5em;
 }
 
-.product_layout_right{
-    width: auto;
+.search {
+    width: 25em;
+    height : 2em;
+    font-size: 20px;
+    border : solid #5e5aa4;
+    margin-right: 1em;
+}
+
+.searchbtn {
+    color: #ffffff;
+    background-color: #afadd2;
+    border-radius: 20px;
+    border: none;
+    padding : 1em;
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+}
+
+.searchbtn:hover {
+    background-color: #5e5aa4;
+    cursor: pointer;
+}
+
+/* Style the tab */
+.tab {
+    width:auto;
+    height:auto;
+    overflow:hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border : solid gray 1px;
+    border-radius : 0 10px 0 0;
+    font-size: large;
+    font-weight: bold;
+    width : 200px;
+}
+  
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    background: #afadd2 ;
+    font-style: italic;
+}
+  
+#tab_on {
+    background :  #5e5aa4;
+    color: white;
+}
+
+
+.brand_menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    grid-gap: 0;
+    width : 50em;
+    margin: 0 auto;
+    text-align: center;
+    padding : 20px;
+}
+
+.menu_cate{
+    font-size: 15px;
+    border : solid 0.5px gray;
+    line-height: middle;
+    padding-top : 8px
+}
+
+.menu_cate:hover {
+    background-color: #afadd2;
+    cursor: pointer;
+}
+
+
+.rank {
+    padding : 2%;
+}
+
+.rank_tr {
+    cursor: pointer;
 }
 
 .product_img {
-    
-    width : 300px;
-    height: 300px;
+    width : 400px;
+    height: 400px;
     padding : 2%;
-    text-align: left;
 }
 
 .product_img img{
@@ -153,95 +238,4 @@ body {
 .product_detail{
     font-size: 15px;
     padding : 5px;
-}
-
-.gift_info{
-    background-color: #afadd2;
-    padding: 3%;
-    margin:2%;
-    font-size:20px;
-    font-family: arial;
-}
-
-.gift_detail{
-    text-align: left;
-}
-
-.gift_attr{
-    font-family: arial black;
-    padding: 3px;
-    text-align: center;
-}
-
-.gift_value{
-    font-family: arial ;
-    padding: 3px;
-    text-align: left;
-
-}
-
-.product_price{
-    padding:3%;
-    padding-top:1%;
-    padding-bottom:1%;
-    margin: 2%;
-    font-size: 25px;
-    width: 500px;
-}
-
-.product_detail{
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 0;
-    padding-bottom: 0;
-    width: 500px;
-    margin: 2%; 
-}
-
-.product_buybtn{
-    margin:2%;  
-    width : 180px;
-    height: 40px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    color:white;
-    border-radius: 20px;
-    background-color: #5e5aa4;
-    cursor: pointer;
-}
-
-#pop{
-    display: none;
-    padding: 3%;
-    width: 400px;
-    height: 100px;
-    background-color: #3d3d3d;
-    color:#fff;
-    position: absolute;
-    top:30%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align:center;
-    border:2px solid #000;
-}
-
-#close{
-    margin:5%;
-    width:100px;
-    height:50px;
-    margin:auto;
-    background-color: transparent;
-    border:transparent;
-    font-size: 20px;
-    color:white;
-}
-
-.user_info{
-    text-align: left;
-    font-size: 16px;
-}
-
-#logoutbtn{
-    text-align: right;
 }
