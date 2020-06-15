@@ -1,47 +1,131 @@
 <link rel="stylesheet" href="test.css">
 
-<div class="guesswindow">
-    <div style="vertical-align: middle;"><button id="guesswindowclose"><i class="fas fa-chevron-left fa-3x" style="cursor: pointer;"></i></button><span class="windowtitle"><h2>&nbsp;&nbsp;&nbsp;Guess your Manito</h2></span></div>
+<div class="resulttable">
+    <!-- thead -->
+    <div class="titem t_head">
+        User
+    </div>
+    <div class="titem t_head">
+        Guess
+    </div>
+    <div class="titem t_head">
+        Real Manito
+    </div>
+    <div class="titem t_head">
+        Result
+    </div>
 
-    <div id="guessuserlist">
-        <div class=pad2>
-            <div id='guessprofile1'class="guessprofile">
-                <div class="pad2_img">
-                    <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-                </div>
-                <div class="pad2_name">Yellow</div>
-                <br>
-                <div class="pad2_btn">
-                    <button id="guessuserbutton2"class="guessuserbutton">Choose</button>
-                </div>
-            </div>
+    <!-- tbody of row1 -->
+    <div class="titem row1">
+        <div class="resultblock_name">
+            <img id="userpic2" src="">
+            <p id="userID3">RTK</p>
         </div>
-            
-        <div class=pad2>
-            <div id='guessprofile2'class="guessprofile">
-                <div class="pad2_img">
-                    <img src="https://pbs.twimg.com/media/D_xHePJUcAIjEJJ.jpg">
-                </div>
-                <div class="pad2_name">Green</div>
-                <br>
-                <div class="pad2_btn">
-                    <button id="guessuserbutton2"class="guessuserbutton">Choose</button>
-                </div>
-            </div>
-        </div>
-
-        <div class=pad2>
-            <div id='guessprofile3'class="guessprofile">
-                <div class="pad2_img">
-                    <img src="https://i.pinimg.com/originals/69/c7/be/69c7bed008f4bd275002b423e36598c3.jpg">
-                </div>
-                <div class="pad2_name">Blue</div>
-                <br>
-                <div class="pad2_btn">
-                    <button id="guessuserbutton2"class="guessuserbutton">Choose</button>
-                </div>
+    </div>
+    <div class="titem row1">
+        <div class="resultblock_guess">
+            <div class=smallprofile>
+                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
+                <p>Yellow</p>
             </div>
         </div>
     </div>
+    <div class="titem row1">
+        <div class="resultblock_manito">
+            <div class=smallprofile>
+                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
+                <p>Yellow</p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row1">
+        <div class="resultblock_hit">
+            <img src='check.png'>
+        </div>
+    </div>
 
+
+    <div class="titem row2">
+        <div class="resultblock_name">
+            <img src="https://i.pinimg.com/originals/69/c7/be/69c7bed008f4bd275002b423e36598c3.jpg">
+            <p> Blue</p>
+        </div>
+    </div>
+    <div class="titem row2">
+        <div class="resultblock_guess">
+            <div class=smallprofile>
+                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
+                <p>Yellow</p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row2">
+        <div class="resultblock_manito">
+            <div class=smallprofile>
+                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
+                <p>Yellow</p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row2">
+        <div class="resultblock_hit">
+            <img src='check.png'>
+        </div>
+    </div>
+
+    <div class="titem row3">
+        <div class='resultblock_name'>
+            <img src="https://pbs.twimg.com/media/D_xHePJUcAIjEJJ.jpg">
+            <p>Green</p>
+        </div>
+    </div>
+    <div class="titem row3">
+        <div class='resultblock_guess'>
+            <div class=smallprofile>
+                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
+                <p>Green</p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row3">
+        <div class='resultblock_manito'>
+            <div class=smallprofile>
+                <img id="userpic3" src="">
+                <p id="userID4"></p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row3">
+        <div class='resultblock_hit'>
+            <img src='xmark.png'>
+        </div>
+    </div>
+
+    <div class="titem row4">
+        <div class='resultblock_name'>
+            <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
+            <p>Yellow</p>
+        </div>
+    </div>
+    <div class="titem row4">
+        <div class='resultblock_guess'>
+            <div class=smallprofile>
+                <img id="userpic4" src="">
+                <p id="userID5"></p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row4">
+        <div class='resultblock_manito'>
+            <div class=smallprofile>
+                <img src="https://i.pinimg.com/originals/69/c7/be/69c7bed008f4bd275002b423e36598c3.jpg">
+                <p>Blue</p>
+            </div>
+        </div>
+    </div>
+    <div class="titem row4">
+        <div class='resultblock_hit'>
+            <img src='xmark.png'>
+        </div>
+    </div>
 </div>

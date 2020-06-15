@@ -1,71 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500&family=Source+Sans+Pro:wght@300;400&family=Sriracha&display=swap');
 
-.pad2{
+.resulttable {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 100px) repeat(4, 200px);
+}
+
+/* head 부분 */
+.titem:nth-child(1){
+    border-bottom: solid #5e5aa4;
+}
+.titem:nth-child(2){
+    border-bottom: solid#5e5aa4;
+    border-right: solid #5e5aa4;
+}
+.titem:nth-child(3){
+    border-bottom: solid #5e5aa4;
+}
+.titem:nth-child(4){
+    border-bottom: solid #5e5aa4;
+}
+
+.t_head {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Anton";
+}
+
+
+.row1, .row2, .row3, .row4 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* table first row */
+.titem:nth-child(5){
+    border-bottom: solid gray 1px;
+}
+.titem:nth-child(6){
+    border-bottom: solid gray 1px;
+    border-right: solid #5e5aa4;
+}
+.titem:nth-child(7){
+    border-bottom: solid gray 1px;
+}
+.titem:nth-child(8){
+    border-bottom: solid gray 1px;
+}
+
+/* table second row */
+.titem:nth-child(9){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(10){
+    border-bottom: solid gray 1px;
+    border-right: solid #5e5aa4;
+}
+.titem:nth-child(11){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(12){
+    border-bottom: solid 1px gray;
+}
+
+/* table third row */
+.titem:nth-child(13){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(14){
+    border-bottom: solid gray 1px;
+    border-right: solid #5e5aa4;
+}
+.titem:nth-child(15){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(16){
+    border-bottom: solid 1px gray;
+}
+
+/* table forth row */
+.titem:nth-child(17) {
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(18) {
+    border-bottom: solid gray 1px;
+    border-right: solid #5e5aa4;
+}
+.titem:nth-child(19) {
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(20) {
+    border-bottom: solid 1px gray;
+}
+
+/* Inside User */
+.resultblock_name{
     font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.resultblock_name img{
     margin: 2%;
-    border : solid 1px #afadd2;
-    border-radius: 5px;
-    width : 200px;
-    height : 300px;
-    text-align: center;
-    float: left;
+    width:100px;
+    height:100px;
+    border-radius: 55px;
+    border: solid;
+    border-color: black;
+    vertical-align: middle;    
 }
 
-#guesswindowclose {
-    border: none;
-    size: 20px;
-    background-color: white;
-    color: black;
+/* Inside Guess */
+.resultblock_guess{
+    width: 30%;    
+    padding-top:0;
+    padding-bottom:0;
+    display: table-cell;
+    border-right:solid; 
+    border-right-color:   #ffffff; 
 }
 
-.guessprofile {
-    margin: 0%;
-    background-color: None;
-    width : 100%;
-    height : 70%;
-    text-align: center;
-    float: left;
+/* small profile related style*/
+.smallprofile img{
+    vertical-align: middle;
+    border :solid;
+    width:100px;
+    height:100px;
+    border-radius: 55px;
+    margin-right:2px;
 }
 
-.pad2_img {
-    text-align: center;
-    width : 100px;
-    height : 100px;
-    padding : 20px;
-    margin : 0 auto;
-    overflow: hidden;
-}
-
-.guessprofile img{
-    width : 100px;
-    height: auto;
-    text-align: center;
-    margin : 0 auto;
-    overflow: hidden;
-}
-
-.pad2_btn {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.guessuserbutton{
-    color: #ffffff;
-    background-color:  #5e5aa4;
-    border: none;
-    padding : 5px;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: inherit;
-    cursor: pointer;
+.smallprofile p{
     font-family: "Montserrat", sans-serif;
-}
-.guessuserbutton:hover{
-    background-color:#3a3870 ;
+    font-size: 20px;
 }
 
-.pad2_name {
-    padding : 10px;
-    font-size: 20px;
+/* Inside Result */
+.resultblock_hit{
+    text-align: center;
+    padding-top: 30px;
+}
+.resultblock_hit img{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
 }
