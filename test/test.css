@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500&family=Source+Sans+Pro:wght@300;400&family=Sriracha&display=swap');
+
+.pad2{
+    font-family: "Montserrat", sans-serif;
+    margin: 2%;
+    border : solid 1px #afadd2;
+    border-radius: 5px;
+    width : 200px;
+    height : 300px;
+    text-align: center;
+    float: left;
+}
+
+#guesswindowclose {
+    border: none;
+    size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.guessprofile {
+    margin: 0%;
+    background-color: None;
+    width : 100%;
+    height : 70%;
+    text-align: center;
+    float: left;
+}
+
+.pad2_img {
+    text-align: center;
+    width : 100px;
+    height : 100px;
+    padding : 20px;
+    margin : 0 auto;
+    overflow: hidden;
+}
+
+.guessprofile img{
+    width : 100px;
+    height: auto;
+    text-align: center;
+    margin : 0 auto;
+    overflow: hidden;
+}
+
+.pad2_btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.guessuserbutton{
+    color: #ffffff;
+    background-color:  #5e5aa4;
+    border: none;
+    padding : 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: inherit;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+.guessuserbutton:hover{
+    background-color:#3a3870 ;
+}
+
+.pad2_name {
+    padding : 10px;
+    font-size: 20px;
+}
