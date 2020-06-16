@@ -1,131 +1,21 @@
-<link rel="stylesheet" href="test.css">
-
-<div class="resulttable">
-    <!-- thead -->
-    <div class="titem t_head">
-        User
-    </div>
-    <div class="titem t_head">
-        Guess
-    </div>
-    <div class="titem t_head">
-        Real Manito
-    </div>
-    <div class="titem t_head">
-        Result
-    </div>
-
-    <!-- tbody of row1 -->
-    <div class="titem row1">
-        <div class="resultblock_name">
-            <img id="userpic2" src="">
-            <p id="userID3">RTK</p>
-        </div>
-    </div>
-    <div class="titem row1">
-        <div class="resultblock_guess">
-            <div class=smallprofile>
-                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-                <p>Yellow</p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row1">
-        <div class="resultblock_manito">
-            <div class=smallprofile>
-                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-                <p>Yellow</p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row1">
-        <div class="resultblock_hit">
-            <img src='check.png'>
-        </div>
-    </div>
-
-
-    <div class="titem row2">
-        <div class="resultblock_name">
-            <img src="https://i.pinimg.com/originals/69/c7/be/69c7bed008f4bd275002b423e36598c3.jpg">
-            <p> Blue</p>
-        </div>
-    </div>
-    <div class="titem row2">
-        <div class="resultblock_guess">
-            <div class=smallprofile>
-                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-                <p>Yellow</p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row2">
-        <div class="resultblock_manito">
-            <div class=smallprofile>
-                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-                <p>Yellow</p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row2">
-        <div class="resultblock_hit">
-            <img src='check.png'>
-        </div>
-    </div>
-
-    <div class="titem row3">
-        <div class='resultblock_name'>
-            <img src="https://pbs.twimg.com/media/D_xHePJUcAIjEJJ.jpg">
-            <p>Green</p>
-        </div>
-    </div>
-    <div class="titem row3">
-        <div class='resultblock_guess'>
-            <div class=smallprofile>
-                <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-                <p>Green</p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row3">
-        <div class='resultblock_manito'>
-            <div class=smallprofile>
-                <img id="userpic3" src="">
-                <p id="userID4"></p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row3">
-        <div class='resultblock_hit'>
-            <img src='xmark.png'>
-        </div>
-    </div>
-
-    <div class="titem row4">
-        <div class='resultblock_name'>
-            <img src="https://img.hankyung.com/photo/201909/03.20575271.1.jpg">
-            <p>Yellow</p>
-        </div>
-    </div>
-    <div class="titem row4">
-        <div class='resultblock_guess'>
-            <div class=smallprofile>
-                <img id="userpic4" src="">
-                <p id="userID5"></p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row4">
-        <div class='resultblock_manito'>
-            <div class=smallprofile>
-                <img src="https://i.pinimg.com/originals/69/c7/be/69c7bed008f4bd275002b423e36598c3.jpg">
-                <p>Blue</p>
-            </div>
-        </div>
-    </div>
-    <div class="titem row4">
-        <div class='resultblock_hit'>
-            <img src='xmark.png'>
-        </div>
-    </div>
-</div>
+<HTML>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        div {margin-bottom:1000px;}
+    </style>
+    <script>
+        function fnMove(seq){
+            var offset = $("#div" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top}, 400);
+        }
+    </script>
+     <BODY>
+        <button onclick="fnMove('1')">div1로 이동</button>
+        <button onclick="fnMove('2')">div2로 이동</button>
+        <button onclick="fnMove('3')">div3로 이동</button>
+        <div id="div1">div1</div>
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+     </BODY>
+    </HTML>
+ 
