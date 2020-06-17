@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500&family=Source+Sans+Pro:wght@300;400&family=Sriracha&display=swap');
+
+/*전체 크기*/
+body {
+    padding : 2;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5em;
+}
+
+/*위쪽 바*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px minmax(800px, auto);
+    grid-gap: 3em 20px;
+    justify-content: center;
+    width : 80em;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item:nth-child(2) {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+}
+
+.item:nth-child(3) {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.item:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+    border-right: solid gray 1px;
+    padding: 1em;
+    justify-content: center;
+}
+
+.item:nth-child(5) {
+    grid-column: 2 / span 4;
+    grid-row: 2;
+    padding : 2em;
+    
+}
+
+.header {
+    text-align: center;
+    padding : 1em;
+}
+
+.logo{
+    padding: 0;
+}
+
+.nav div {
+    display: inline-block;
+    margin : 0%;
+    padding : 0%;
+    height : 20px;
+}
+
+.nav .nav-link {
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 3em;
+}
+
+.nav .active > .nav-link {
+    width:100%;
+    height:51px;
+    border-bottom: .50rem solid transparent;
+    border-bottom-color: #5e5aa4;
+}
+
+.navbtn:hover > .nav-link{
+    width:100%;
+    border-bottom: .50rem solid transparent;
+    border-bottom-color: #afadd2;
+}
+
+.info{
+    text-align: right;
+}
+
+.sidebarbtn {
+    width : 120px;
+    height: 120px;
+    margin : 10px;
+    float: right;
+}
+
+.sidebarbtn.on {
+    background-color:silver;
+    color: #5e5aa4;
+}
+
+/*컨텐츠*/
+.under {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-auto-rows: auto auto;
+    min-height: 1000px;
+   }
+ 
+.sidebar {
+    float: left;
+    border-right : solid;
+    
+    padding : 5%;
+}
+
+.sidebarbtn {
+    width : 120px;
+    height: 120px;
+    margin : 10px;
+    float: right;
+    max-width: inherit;
+    height : inherit;
+    border: solid #5e5aa4;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding:5%;
+}
+
+.sidebarbtn svg {
+    padding: 20%;
+    font-size: 40px;
+  }
+
+
+
+.detail {
+    border: NONE;
+    margin : 2%;
+    padding : 0%;
+    align-content: center;
+}
+
+
+.contentp {
+    background-color: dimgray;
+    max-width: 500px;
+    text-align: center;
+    margin: 0%;
+}
+
+
+
+
+
+
+/*User 프로필*/
+.userprofile{
+    margin: 2%;
+    padding : 1%;
+    float : left;
+    border: solid 1px #afadd2;
+    border-radius: 5px;
+    width : 200px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.userprofile img{
+    position: relative;
+    border: solid gray 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    height: 100PX;
+    width: 100PX;
+    margin: 5%;
+}
+
+/*빈 마니또 프로필*/
+.userprofile empty{
+    padding : 1%;
+    margin: 2%;
+    float : left;
+    background-color: #afadd2;
+    width : 30%;
+    height : 40%;
+    text-align: center;
+}
+
+.userprofile empty svg{ 
+    position: relative;
+    border: solid;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100PX;
+    width: 100PX;
+    margin: 5%;
+}
+
+/*화살표*/
+.guessingarrowwrapper{
+    margin: 2%;
+    float : left;
+    width : 25%;
+    height : 40%;
+    text-align: center;
+    
+}
+.guessingarrowwrapper svg{
+    vertical-align: middle;
+    color:  #5e5aa4;
+}
+
+/*마니또 선택 설명란*/
+#guessdescription{
+    font-family: "Source Sans Pro",sans-serif;
+    margin: 20px;
+    width: 700px;
+    padding: 3%;
+    position: relative;
+    line-height: 20px;
+    font-size: large;
+    border-radius: 20px;
+}
+
+.emph{
+    color: royalblue;
+    font-weight: bold;
+}
+
+/*마니또 추측도 + 마니또 선택 설명란*/
+.pad{
+    width : 90%;
+    margin: 3%;
+    display: flow-root;
+    text-align: center;
+    
+}
+
+.guessbtn.posi{
+    color: #ffffff;
+    background-color:#5e5aa4;
+    border: none;
+    padding : 1em;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 20px;
+    text-align: center;
+    width: 10em;
+    cursor: pointer;
+}
+
+.guessbtn.nega{
+    color:gray;
+    background-color:gainsboro;
+    border: none;
+    padding : 1em;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 20px;
+    text-align: center;
+    width: 10em;
+}
+
+
+/*guess window*/
+
+.manitomain{
+    display: inline;
+}
+
+.guesswindow{
+    display: none;
+}
+
+#guesswindowclose {
+    border: none;
+    size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.guessprofile {
+    margin: 0%;
+    background-color: None;
+    width : 100%;
+    height : 70%;
+    text-align: center;
+    float: left;
+}
+
+.pad2_img {
+    text-align: center;
+    width : 100px;
+    height : 100px;
+    padding : 20px;
+    margin : 0 auto;
+    overflow: hidden;
+}
+
+.guessprofile img{
+    width : 100px;
+    height: auto;
+    text-align: center;
+    margin : 0 auto;
+    overflow: hidden;
+}
+
+.pad2_btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.guessuserbutton{
+    color: #ffffff;
+    background-color:  #5e5aa4;
+    border: none;
+    padding : 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: inherit;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+.guessuserbutton:hover{
+    background-color:#3a3870 ;
+}
+
+.pad2_name {
+    padding : 10px;
+    font-size: 20px;
+}
+
+.pad2{
+    font-family: "Montserrat", sans-serif;
+    margin: 2%;
+    border : solid 1px #afadd2;
+    border-radius: 5px;
+    width : 200px;
+    height : 300px;
+    text-align: center;
+    float: left;
+}
+
+.windowtitle{
+    inline-size: inherit;
+
+}
+
+#manitoresult{
+    display : none;
+}
+
+.resulttable {
+    padding : 20px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 100px) repeat(4, 100px);
+}
+
+/* head 부분 */
+.titem:nth-child(1){
+    border-bottom: solid  #afadd2;
+}
+.titem:nth-child(2){
+    border-bottom: solid #afadd2;
+    border-right: solid  #afadd2;
+}
+.titem:nth-child(3){
+    border-bottom: solid  #afadd2;
+}
+.titem:nth-child(4){
+    border-bottom: solid  #afadd2;
+}
+
+.titem {
+    font-family: "Montserrat",sans-serif;
+}
+
+.t_head {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.row1, .row2, .row3, .row4 {
+    padding: 10px;
+    text-align: center;
+}
+
+/* table first row */
+.titem:nth-child(5){
+    border-bottom: solid gray 1px;
+}
+.titem:nth-child(6){
+    border-bottom: solid gray 1px;
+    border-right: solid  #afadd2;
+}
+.titem:nth-child(7){
+    border-bottom: solid gray 1px;
+}
+.titem:nth-child(8){
+    border-bottom: solid gray 1px;
+}
+
+/* table second row */
+.titem:nth-child(9){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(10){
+    border-bottom: solid gray 1px;
+    border-right: solid  #afadd2;
+}
+.titem:nth-child(11){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(12){
+    border-bottom: solid 1px gray;
+}
+
+/* table third row */
+.titem:nth-child(13){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(14){
+    border-bottom: solid gray 1px;
+    border-right: solid  #afadd2;
+}
+.titem:nth-child(15){
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(16){
+    border-bottom: solid 1px gray;
+}
+
+/* table forth row */
+.titem:nth-child(17) {
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(18) {
+    border-bottom: solid gray 1px;
+    border-right: solid  #afadd2;
+}
+.titem:nth-child(19) {
+    border-bottom: solid 1px gray;
+}
+.titem:nth-child(20) {
+    border-bottom: solid 1px gray;
+}
+
+/* Inside User */
+.resultblock_name{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.resultblock_name img{
+    margin: 2%;
+    width: auto;
+    height: auto;
+    max-width:70px;
+    max-height:70px;
+    border-color: black;
+    vertical-align: middle;    
+}
+
+/* Inside Guess */
+.resultblock_guess{
+    width: 30%;    
+    padding-top:0;
+    padding-bottom:0;
+    display: table-cell;
+    border-right:solid; 
+    border-right-color:   #ffffff; 
+}
+
+/* small profile related style*/
+.smallprofile img{
+    vertical-align: middle;
+    widows: 70px;
+    height: 70px;
+    margin-right:2px;
+}
+
+.smallprofile p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+/* Inside Result */
+.resultblock_hit{
+    text-align: center;
+    padding-top: 5px;
+}
+.resultblock_hit img{
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+}
+
+.user_info{
+    text-align: left;
+    font-size: 16px;
+}
+
+#logoutbtn{
+    text-align: right;
+}
+
+.table_head {
+    font-family: "Montserrat", sans-serif ;
+}
+
+#resultname {
+    color: royalblue;
+}
+
+.ale {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    border: solid 2px #afadd2;
+    font-family: "Sriracha", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
